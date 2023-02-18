@@ -1,0 +1,70 @@
+:root {
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f0f0f0;
+}
+.container {
+  margin-top: 4%;
+  margin-left: 7%;
+  height: 85vh;
+  width: 85vw;
+  background-color: #f1f5fe;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.heading-text {
+  text-align: center;
+  /* margin-bottom: 100px; */
+}
+.col-size {
+  width: 100px;
+}
+.main-box {
+  display: flex;
+  color: #ffff;
+}
+.box {
+  padding: 10px 10px;
+  height: 45vh;
+  width: 13vw;
+  margin-top: 15vh;
+}
+.description {
+  margin-top: 25px;
+}
+.yellow-box {
+  background-color: #e28525;
+  border-radius: 20px 0px 0px 20px;
+}
+.half-green-box {
+  background-color: #016972;
+}
+.green-box {
+  background-color: #00403f;
+  border-radius: 0px 20px 20px 0px;
+}
+.yellow-box .button {
+  color: #e28525;
+}
+.half-green-box .button {
+  color: #016972;
+}
+.green-box .button {
+  color: #00403f;
+}
+.button {
+  margin: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: none;
+  padding: 7px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
