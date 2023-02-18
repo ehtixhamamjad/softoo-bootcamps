@@ -1,0 +1,228 @@
+:root {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f0f0f0;
+}
+.main-component {
+  margin-top: 4%;
+  margin-left: 7%;
+  height: 85vh;
+  width: 85vw;
+  background-color: #f1f5fe;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.heading-text-container {
+  padding-top: 35px;
+}
+.heading-text {
+  font-size: 1.5em;
+  font-weight: 800;
+  text-align-last: center;
+}
+.description {
+  text-align-last: center;
+  margin-bottom: 10vh;
+  color: #666666;
+}
+
+.controller-box {
+  padding-top: 20px;
+  height: 50vh;
+  width: 35vw;
+  background-color: #ffff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: auto;
+}
+.price-text-line {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.price-description {
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.price {
+  margin-left: 30px;
+  font-weight: 800;
+  font-size: 1.7em;
+}
+.price-month {
+  margin-left: 5px;
+  color: #666666;
+}
+.slider-container {
+  text-align: center;
+  margin-top: 3vh;
+}
+/* custom rang slider*/
+.slider-container .slider {
+  -webkit-appearance: none;
+  width: 65%;
+  height: 5px;
+  background: #d9dbe1;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider-container .slider:hover {
+  opacity: 1;
+}
+
+.slider-container .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 20px;
+  background: #14d8c5;
+  box-shadow: #14d8c5 0px 8px 24px;
+  cursor: pointer;
+}
+.identity {
+  margin-top: 7vh;
+  text-align-last: right;
+  margin-right: 3vw;
+}
+.identity-left-text {
+  color: #666666;
+  margin-right: 15px;
+}
+/* Toggle Switch */
+
+.identity .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.identity .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.identity .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d9dbe1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.identity .slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  top: 2.5px;
+  left: 4px;
+  right: 4px;
+  bottom: 3.5px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #14d8c5;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.identity .slider.round {
+  border-radius: 34px;
+}
+
+.identity .slider.round:before {
+  border-radius: 50%;
+}
+
+.identity-right-text {
+  margin-left: 15px;
+  color: #666666;
+}
+.identity-right-paid-sticker {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 25px;
+  background-color: #f0b8b2;
+  color: #fa3a3a;
+}
+.line {
+  margin-top: 40px;
+  height: 0.1vh;
+  background-color: #eaebef;
+}
+.submit-button-area {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7vh;
+}
+/* tick */
+#tick-mark {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+#tick-mark::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 50%;
+  width: 2px;
+  background-color: #14d8c5;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+#tick-mark::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #14d8c5;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+.submit-text {
+  margin-left: 5px;
+  color: #666666;
+  font-size: 0.85em;
+}
+.button {
+  margin-top: 10px;
+  background-color: #283454;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}

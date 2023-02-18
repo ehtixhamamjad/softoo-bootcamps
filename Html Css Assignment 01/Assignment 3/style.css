@@ -1,0 +1,85 @@
+:root {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* text is not mention in our assignment */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f0f0f0;
+}
+.container {
+  padding-top: 150px;
+}
+.main-component {
+  margin-top: 4%;
+  margin-left: 7%;
+  height: 85vh;
+  width: 85vw;
+  background-color: #0d1a2d;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.controller-box {
+  height: 50vh;
+  width: 12vw;
+  background-color: #15273f;
+  margin: auto;
+  border-radius: 10px;
+}
+.card-image {
+  display: flex;
+  justify-content: center;
+}
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+.card-text {
+  padding: 10px;
+}
+.heading {
+  font-weight: 200;
+  font-size: 1em;
+  color: #ffff;
+  margin-top: 50px;
+}
+.description {
+  font-weight: 100;
+  font-size: 0.75em;
+  color: #8a8a8a;
+  margin-bottom: 20px;
+}
+.rate-container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 100;
+  font-size: 0.75em;
+}
+.rate-container .price {
+  color: #0bbabe;
+}
+.rate-container .day {
+  color: #ffff;
+}
+.line {
+  margin-top: 15px;
+  height: 1px;
+  background-color: #1f3149;
+}
+.user {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.5vh;
+
+  font-weight: 100;
+  font-size: 0.75em;
+}
+.mention-user {
+  color: #405876;
+}
+.user-name {
+  color: azure;
+}

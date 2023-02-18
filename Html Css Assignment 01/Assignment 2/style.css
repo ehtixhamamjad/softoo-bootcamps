@@ -1,0 +1,73 @@
+:root {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* text is not mention in our assignment */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f0f0f0;
+}
+.container {
+  padding-top: 150px;
+}
+.main-component {
+  margin-top: 4%;
+  margin-left: 7%;
+  height: 85vh;
+  width: 85vw;
+  background-color: #141519;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.controller-box {
+  height: 43vh;
+  width: 25vw;
+  background-color: #1e252f;
+  margin: auto;
+  border-radius: 25px;
+}
+.card-text {
+  padding: 10px 20px;
+}
+.heading {
+  font-weight: 700;
+  font-size: 2em;
+  color: #ffff;
+  margin-top: 50px;
+}
+.description {
+  font-size: 0.9em;
+  color: #8a8a8a;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+.circle {
+  display: flex;
+  color: #f0f0f0;
+  justify-content: space-around;
+}
+.number {
+  padding: 15px 20px;
+  background-color: #262e38;
+  border-radius: 50%;
+}
+.submit-btn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.button {
+  background-color: #fb7713;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  padding: 8px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
