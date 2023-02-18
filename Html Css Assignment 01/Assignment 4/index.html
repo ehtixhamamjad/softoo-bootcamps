@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment 04</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="color-side"></div>
+      <div class="main-side">
+        <div class="form-container">
+          <form action="action_page.php">
+            <label for="cardHolderName">CARDHOLDER NAME</label>
+            <input
+              size="35"
+              type="text"
+              id="cardHolderName"
+              name="cardHolderName"
+              placeholder="e.g. Jane Appleseed"
+              class="text-input"
+            />
+
+            <label for="cardHolderName">CARD NUMBER</label>
+            <input
+              size="35"
+              type="text"
+              id="cardNumber"
+              name="cardNumber"
+              placeholder="e.g. 1234 5678 9123 0000"
+              class="text-input"
+            />
+            <div class="date-and-csv">
+              <div class="exp-date">
+                <label for="cardHolderName">CARD NUMBER</label>
+                <div class="date">
+                  <input
+                    size="4"
+                    type="text"
+                    id="monthID"
+                    name="month"
+                    placeholder="MM"
+                    class="text-input"
+                  />
+                  <input
+                    size="4"
+                    type="text"
+                    id="monthID"
+                    name="month"
+                    placeholder="YY"
+                    class="text-input"
+                  />
+                </div>
+              </div>
+              <!-- ------- -->
+              <div class="exp-date">
+                <label for="csv">CSV</label>
+                <div class="date">
+                  <input
+                    size="10"
+                    type="text"
+                    id="csv"
+                    name="csv"
+                    placeholder="e.g.123"
+                    class="text-input"
+                  />
+                </div>
+              </div>
+            </div>
+            <input type="submit" value="Confirm" class="confirm-button" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+:root {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-container {
+  display: flex;
+}
+.color-side {
+  background-color: rgb(
+    251,
+    0,
+    255
+  ); /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    to bottom right,
+    #260a35,
+    #481854,
+    #312c5b,
+    #230d34,
+    #220930
+  );
+  width: 30%;
+  height: 100vh;
+}
+.main-side {
+  background-color: #ffffff;
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+label,
+input {
+  display: block;
+}
+
+.form-container label {
+  font-size: 1em;
+  font-weight: 100;
+  color: #666666;
+  margin-top: 20px;
+}
+.form-container .text-input {
+  border: 1px solid #c1c0c0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+}
+.date-and-csv {
+  display: flex;
+  flex-direction: row;
+}
+
+.date-and-csv input {
+  margin-right: 8px;
+}
+.exp-date {
+}
+.confirm-button{
+    margin-top: 17px;
+        background-color: #220930;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        padding: 11px 116px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      
+}
