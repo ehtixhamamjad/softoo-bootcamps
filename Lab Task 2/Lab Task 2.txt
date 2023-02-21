@@ -1,0 +1,20 @@
+Given an array of users, each represented by an object with the following properties:
+ {
+name: 'John Doe',
+age: 35,
+email: 'john@doe.com',
+address: {
+city: 'New York',
+state: 'NY'
+}
+}
+
+
+1. Use the forEach method to print the name and email of each user.
+2. Use the map method to create an array of just the names of each user.
+3. Use the optional chaining operator (?.) to safely access the state of each user's
+address.
+4. Use the rest operator to collect all the remaining properties of each user into a
+new object.
+5. Use destructuring to extract the name and email of each user into separate
+variables

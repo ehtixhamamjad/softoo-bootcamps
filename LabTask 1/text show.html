@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Display JavaScript Object in HTML Table</title>
+  </head>
+  <body>
+    <div id="myTable"></div>
+    <script>
+      var newElement = document.createElement("h1");
+      var newText = document.createTextNode("Ehtisham Amjad");
+      newElement.appendChild(newText);
+      document.getElementById("myTable").appendChild(newElement);
+      console.log(newElement);
+    </script>
+  </body>
+</html>

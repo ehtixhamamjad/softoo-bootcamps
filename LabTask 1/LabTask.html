@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Manipulating Arrays and Objects in JavaScript</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+
+  <h5>Lab Task:</h5>
+
+  <h5>Title: Manipulating Arrays and Objects in JavaScript</h5>
+  <p>
+    Objective: To apply the concepts of datatypes, arrays, objects, and array
+    methods that were taught in class.
+  </p>
+  <h5>Instructions:</h5>
+  <ol>
+    <li>
+      Create an array of 5 student objects, each containing the following
+      properties: name, age, and subject.
+    </li>
+    <li>
+      Write a function to add a new student object to the end of the array.
+    </li>
+    <li>Write a function to remove the student object at a specified index.</li>
+    <li>
+      Write a function to update the subject of a specified student object.
+    </li>
+    <li>
+      Write a function to create a shallow copy of the array and store it in a
+      new variable.
+    </li>
+    <li>
+      Write a function to create a deep copy of the array and store it in a new
+      variable.
+    </li>
+    <li>
+      Use console.log to display the original array, shallow copy, and deep
+      copy.
+    </li>
+
+    <p>
+      Note: You can use the Array.prototype.slice method for shallow copying,
+      and JSON.parse(JSON.stringify(obj)) for deep copying.
+    </p>
+    <p>Submit the code when you are done.</p>
+    <center>
+      <p style="color: red">You can Also check the Console to see the Result</p>
+      <table id="fiveStudentObjectTable">
+        <p>Task 01:Create an array of 5 student objects</p>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Subject</th>
+      </table>
+      <table id="newStudentObjectTable">
+        <p>Task 02:Add a new student object in the end of the Array</p>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Subject</th>
+      </table>
+      <table id="removeStudentObjectTable">
+        <p>Task 03:Remove the student object at the Index of the 2</p>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Subject</th>
+      </table>
+      <table id="updateStudentObjectTable">
+        <p>Task 04:Update the student object at the Index of the 4</p>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Subject</th>
+      </table>
+      <table id="shallowCopyStudentObjectTable">
+        <p>Task 05:Update the student object at the Index of the 4</p>
+        <p>
+          Shallow copy: means that only the first level of the object is copied
+        </p>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Subject</th>
+      </table>
+      <table id="deepCopyStudentObjectTable">
+        <p>Task 06:Update the student object at the Index of the 4</p>
+        <p>Deep copy: means that all levels of the object are copied.</p>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Subject</th>
+      </table>
+    </center>
+  </ol>
+
+  <body>
+    <script>
+      // create a student array (task:01)
+      let studentArray = [
+        {
+          name: "Ehtisham",
+          age: 10,
+          subject: "English",
+        },
+        {
+          name: "Ali",
+          age: 20,
+          subject: "Math",
+        },
+        {
+          name: "Ahmed",
+          age: 30,
+          subject: "Pak Study",
+        },
+        {
+          name: "Farz",
+          age: 40,
+          subject: "Science",
+        },
+        {
+          name: "Arslan",
+          age: 45,
+          subject: "Liner Alg",
+        },
+      ];
+      let Task01StudentArray = JSON.parse(JSON.stringify(studentArray));
+      console.log("Task: 01", Task01StudentArray);
+      Object.values(Task01StudentArray).forEach((value) => {
+        let newRow = document.createElement("tr");
+        let name = document.createElement("td");
+        let age = document.createElement("td");
+        let subject = document.createElement("td");
+        newRow.appendChild(name);
+        newRow.appendChild(age);
+        newRow.appendChild(subject);
+        name.innerText = value.name;
+        age.innerText = value.age;
+        subject.innerHTML = value.subject;
+        document.getElementById("fiveStudentObjectTable").appendChild(newRow);
+      });
+      // add student (task:02)
+      let Task02StudentArray = JSON.parse(JSON.stringify(studentArray));
+      const addNewStudent = () => {
+        Task02StudentArray.push({
+          name: "Farhan New",
+          age: 55,
+          subject: "Math",
+        });
+      };
+      addNewStudent();
+      console.log("Task: 02", Task02StudentArray);
+      Object.values(Task02StudentArray).forEach((value) => {
+        let newRow = document.createElement("tr");
+        let name = document.createElement("td");
+        let age = document.createElement("td");
+        let subject = document.createElement("td");
+        newRow.appendChild(name);
+        newRow.appendChild(age);
+        newRow.appendChild(subject);
+        name.innerText = value.name;
+        age.innerText = value.age;
+        subject.innerHTML = value.subject;
+        document.getElementById("newStudentObjectTable").appendChild(newRow);
+      });
+      // remove the student  (task:03)
+      let Task03StudentArray = JSON.parse(JSON.stringify(studentArray));
+      function removeStudent(Task03StudentArray, index) {
+        Task03StudentArray.splice(index, 1);
+      }
+      removeStudent(Task03StudentArray, 2);
+      console.log("Task: 03", Task03StudentArray);
+      Object.values(Task03StudentArray).forEach((value) => {
+        let newRow = document.createElement("tr");
+        let name = document.createElement("td");
+        let age = document.createElement("td");
+        let subject = document.createElement("td");
+        newRow.appendChild(name);
+        newRow.appendChild(age);
+        newRow.appendChild(subject);
+        name.innerText = value.name;
+        age.innerText = value.age;
+        subject.innerHTML = value.subject;
+        document.getElementById("removeStudentObjectTable").appendChild(newRow);
+      });
+      //update user (task:04)
+      let Task04StudentArray = JSON.parse(JSON.stringify(studentArray));
+      let specifiedIndex = 4;
+      for (let i = 0; i < Task04StudentArray.length; i++) {
+        if (i == specifiedIndex) {
+          Task04StudentArray[i].name = Task04StudentArray[i].name = "New Name";
+          Task04StudentArray[i].age = Task04StudentArray[i].age = 50;
+          Task04StudentArray[i].subject = Task04StudentArray[i].subject =
+            "Pak Study";
+        }
+      }
+      console.log("Task: 04", Task04StudentArray);
+      Object.values(Task04StudentArray).forEach((value) => {
+        let newRow = document.createElement("tr");
+        let name = document.createElement("td");
+        let age = document.createElement("td");
+        let subject = document.createElement("td");
+        newRow.appendChild(name);
+        newRow.appendChild(age);
+        newRow.appendChild(subject);
+        name.innerText = value.name;
+        age.innerText = value.age;
+        subject.innerHTML = value.subject;
+        document.getElementById("updateStudentObjectTable").appendChild(newRow);
+      });
+      // shallow copy (task:05)
+      let newStudentArrayShallowCopy = studentArray.slice();
+      console.log("Task: 05", newStudentArrayShallowCopy);
+      Object.values(newStudentArrayShallowCopy).forEach((value) => {
+        let newRow = document.createElement("tr");
+        let name = document.createElement("td");
+        let age = document.createElement("td");
+        let subject = document.createElement("td");
+        newRow.appendChild(name);
+        newRow.appendChild(age);
+        newRow.appendChild(subject);
+        name.innerText = value.name;
+        age.innerText = value.age;
+        subject.innerHTML = value.subject;
+        document
+          .getElementById("shallowCopyStudentObjectTable")
+          .appendChild(newRow);
+      });
+      // deep  copy (task:06)
+      let newStudentArrayDeepCopy = JSON.parse(JSON.stringify(studentArray));
+      console.log("Task: 06", newStudentArrayDeepCopy);
+      Object.values(newStudentArrayDeepCopy).forEach((value) => {
+        let newRow = document.createElement("tr");
+        let name = document.createElement("td");
+        let age = document.createElement("td");
+        let subject = document.createElement("td");
+        newRow.appendChild(name);
+        newRow.appendChild(age);
+        newRow.appendChild(subject);
+        name.innerText = value.name;
+        age.innerText = value.age;
+        subject.innerHTML = value.subject;
+        document
+          .getElementById("deepCopyStudentObjectTable")
+          .appendChild(newRow);
+      });
+    </script>
+  </body>
+</html>

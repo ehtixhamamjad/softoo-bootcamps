@@ -1,0 +1,18 @@
+Lab Task:
+
+Title: Manipulating Arrays and Objects in JavaScript
+
+Objective: To apply the concepts of datatypes, arrays, objects, and array methods that were taught in class.
+
+Instructions:
+
+Create an array of 5 student objects, each containing the following properties: name, age, and subject.
+Write a function to add a new student object to the end of the array.
+Write a function to remove the student object at a specified index.
+Write a function to update the subject of a specified student object.
+Write a function to create a shallow copy of the array and store it in a new variable.
+Write a function to create a deep copy of the array and store it in a new variable.
+Use console.log to display the original array, shallow copy, and deep copy.
+Note: You can use the Array.prototype.slice method for shallow copying, and JSON.parse(JSON.stringify(obj)) for deep copying.
+
+Submit the code when you are done.

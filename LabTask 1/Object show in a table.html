@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Display JavaScript Object in HTML Table</title>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <center>
+      <table id="myTable">
+        <th>Name</th>
+        <th>age</th>
+      </table>
+    </center>
+    <script>
+      // Define a sample JavaScript object
+      var person = [
+        {
+          name: "Ehtisham",
+          age: 10,
+        },
+        {
+          name: "Ehtisham",
+          age: 10,
+        },
+        {
+          name: "Ehtisham",
+          age: 10,
+        },
+      ];
+      Object.values(person).forEach((value) => {
+        let newRow = document.createElement("tr");
+        let name = document.createElement("td");
+        let age = document.createElement("td");
+        newRow.appendChild(name);
+        newRow.appendChild(age);
+        name.innerText = value.name;
+        age.innerText = value.age;
+        document.getElementById("myTable").appendChild(newRow);
+      });
+
+      // var newElement = document.createElement("h1");
+      // var newText = document.createTextNode("Ehtisham Amjad");
+      // newElement.appendChild(newText);
+      // document.getElementById("myTable").appendChild(newElement);
+      // console.log(newElement);
+    </script>
+  </body>
+</html>
