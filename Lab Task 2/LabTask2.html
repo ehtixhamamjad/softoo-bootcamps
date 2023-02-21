@@ -7,6 +7,7 @@
     <title>Lab Task 2</title>
   </head>
   <body>
+    <!-- TODO:light -->
     <h4>
       Given an array of users, each represented by an object with the following
       properties:
@@ -33,6 +34,9 @@
         separate variables
       </li>
     </ol>
+    <center>
+      <p style="color: red">You can check the Console to see the Result</p>
+    </center>
   </body>
   <script>
     let users = [
@@ -45,6 +49,44 @@
           state: "NY",
         },
       },
+      {
+        name: "James Mary",
+        age: 35,
+        email: "jamesmary@email.com",
+        address: {
+          city: "Los Angeles",
+          state: "California",
+        },
+      },
+      {
+        name: "Robert Patricia",
+        age: 35,
+        email: "robert@email.com",
+        address: {
+          city: "Chicago",
+          state: "Illinois",
+        },
+      },
     ];
+    // Print name and email through forEach Method (Task:01)
+    users.forEach((value) => console.log(value.name, value.email));
+    // Use the map method (Task:02)
+    const userNames = users.map((users) => {
+      return users.name;
+    });
+    console.log(userNames);
+    //Use the optional chaining operator (?.) (Task:03)
+    users.forEach((value) => console.log(value?.address));
+    //rest operator  (Task:04)
+    function myFun(...newUsers) {
+      console.log("New users", newUsers);
+    }
+    myFun(users);
+    // destructuring to extract the name and email  (Task:05)
+    const { name, email } = users[1];
+    console.log(name);
+    console.log(email);
   </script>
 </html>
+
+<!-- hello -->
