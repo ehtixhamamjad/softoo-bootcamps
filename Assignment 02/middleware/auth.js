@@ -4,7 +4,7 @@ const { User } = require("../models/User");
 exports.isAuthenticated = async (req, res, next) => {
   try {
     console.log(req);
-    const token = req.cookies.token;
+    const token = req.cookies[""];
 
     if (!token) {
       return res.status(401).json({ success: false, message: "Login First" });
